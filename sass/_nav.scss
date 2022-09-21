@@ -1,0 +1,164 @@
+.nav{
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.454);
+    .navContainer{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        .icono-nav{
+            width: 100px;
+        }
+        .menu{
+            display: none;
+            justify-content: flex-end;
+            margin: 0 -10px;
+            a{
+                color: $white;
+                text-decoration: none;
+                margin: 0 10px;
+                position: relative;
+                span{
+                    position: absolute;
+                    background: $azulPrimario;
+                    width: 0;
+                    height: 2px;
+                    bottom: -3px;
+                    left: 0;
+                    transition: all 300ms ease-out;
+                }
+                &:hover span{
+                    width: 100%;
+                }
+            }
+            .active span{
+                width: 100%;
+            }
+        }
+        .hamburger{
+            display: block;
+            position: relative;
+            z-index: 1;
+            user-select: none;
+            appearance: none;
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+            span{
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin-bottom: 5px;
+                position: relative;
+                background-color: $white;
+                border-radius: 6px;
+                z-index: 1;
+                transform-origin: 0 0;
+                transition: 0.5s;
+                &:nth-child(3){
+                    margin-bottom: 0px;  
+                }
+            }
+            &:hover span:nth-child(2) {
+                transform: translateX(6px);
+                border-radius: 6px;
+                background-color:$azulOscuro;
+
+            }
+        }
+        .is-active{
+            &:hover span{
+                background-color: $azulOscuro;
+            }
+            span{
+                &:nth-child(1){
+                    transform: translate(0px, 0px) rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                    transform: translateX(15px);
+                }
+                &:nth-child(3){
+                    transform: translate(-2px, 1px) rotate(-45deg);
+                }
+            } 
+        } 
+    }
+}
+.nav-mobile {
+    opacity: 1;
+    .nav-mobile-container{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        z-index: 98;
+        background-color: rgba(0, 0, 0, 0.459);
+        transition: 0.4s;
+        a{
+            display: block;
+            text-align: center;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            padding: 10px;
+            color:$white;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: $azulOscuro;
+            position: relative;
+            overflow: hidden;
+            span {
+                position: absolute;
+                background: $verde;
+                width: 1%;
+                height: 100%;
+                top: 0;
+                left: -1%;
+                transition: .4s;
+            }
+            p{
+                font-weight: 300;
+                position: relative;
+                transition: .4s;
+            }
+            &:hover span {
+                border-radius: 5px;
+                width: 101%;
+            }
+            &:hover p {
+                color: $black;
+            }
+        }
+    }
+    .is-active{
+        top: 0;
+    }
+}
+
+@media(min-width:768px){
+    .nav .navContainer{
+        .hamburger{
+            display: none;
+        }
+        .menu{
+            display: flex;
+        }
+    }
+    .nav-mobile{
+        opacity: 0;
+    }
+}
