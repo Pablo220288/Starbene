@@ -21,5 +21,17 @@
             background-color: #ffffff40;
             z-index: -1;
         }
+        .slogan{
+            width: 100%;
+            padding: 0 20px;
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translate(-50%, -10%);
+            color: $azulOscuro;
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-align: center;
+        }
     }
 }
