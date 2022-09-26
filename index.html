@@ -10,11 +10,20 @@
         <!--Info Page-->
         <title>Starbene | Venta de Equipos de Medicina Estética</title>
         <link rel="icon" href="assets/iconoStarbene.png">
+        <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--CSS-->
         <link rel="stylesheet" href="sass/css/styles.css">
     </head>
     <body>
         <header>
+            <div class="loader-conatiner" id="loader">
+                <div class="loader-circle-img">
+                    <div class="loader-circle-1"></div>
+                    <div class="loader-circle-2"></div>
+                    <img class="loader-img" src="assets/iconoStarbene.png" alt="Icono Starbene">
+                </div>
+            </div>
             <nav class="nav">
                 <div class="navContainer">
                     <img class="icono-nav" src="assets/logoCompleto.png" alt="Icono Starbene">
@@ -25,9 +34,11 @@
                         <a href="#"><span></span>Contacto</a>
                     </div>
                     <button class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <div class="hamburger-container">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </button>
                 </div>
             </nav>
@@ -46,7 +57,72 @@
                     <div class="capa"></div>
                     <p class="slogan">Medicina Estetica de Alta Tecnologia</div>
                 </div>
+                <div class="productos-index-container">
+                    <div class="productos-index">
 
+                    </div>
+                </div>
+                <div class="frabicantes-index">
+                    <h2 class="fabricantes-title">Somos Fabricantes</h2>
+                    <div class="fabricantes-container">
+                        <section class="fabricantes-caract">
+                            <div class="caract">
+                                <div class="icono" >
+                                    <img src="assets/objetivo.png" alt="Objetivo" data-aos="flip-down">
+                                </div>
+                                <div class="title-text">
+                                    <div class="title" data-aos="zoom-in" data-aos-delay="100">
+                                        <h4>Trayectoria</h4>
+                                    </div>
+                                    <div class="text" data-aos="zoom-in" data-aos-delay="200">
+                                        <p>Más de 47 años acompañando a nuestros clientes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caract">
+                                <div class="icono">
+                                    <img src="assets/garantia.png" alt="Garantias" data-aos="flip-down">
+                                </div>
+                                <div class="title-text">
+                                    <div class="title" data-aos="zoom-in" data-aos-delay="100">
+                                        <h4>Garantias</h4>
+                                    </div>
+                                    <div class="text" data-aos="zoom-in" data-aos-delay="200">
+                                        <p>Cumplimos con un riguroso proceso científico de validación de resultados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="capaitacion-servicio">
+                            <div class="caract">
+                                <div class="icono">
+                                    <img src="assets/capacitacion.png" alt="Capacitación" data-aos="flip-down">
+                                </div>
+                                <div class="title-text">
+                                    <div class="title" data-aos="zoom-in" data-aos-delay="100">
+                                        <h4>Capacitación</h4>
+                                    </div>
+                                    <div class="text" data-aos="zoom-in" data-aos-delay="200">
+                                        <p>Apostamos por la profesionalización de alto nivel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caract">
+                                <div class="icono">
+                                    <img src="assets/soporte-tecnico.png" alt="Srevicio Técnico" data-aos="flip-down">
+                                </div>
+                                <div class="title-text">
+                                    <div class="title" data-aos="zoom-in" data-aos-delay="100">
+                                        <h4>Srevicio Técnico</h4>
+                                    </div>
+                                    <div class="text" data-aos="zoom-in" data-aos-delay="200">
+                                        <p>Siempre disponibles para dar respuesta a todas tus consultas y requerimientos técnicos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -54,53 +130,89 @@
                 <div class="footer-container">
                     <div class="footer-slogan-link-redes">
                         <div class="footer-logo-slogan">
-                            <img class="footer-logo" src="assets/logoCompleto.png" alt="Starbene">
-                            <h4 class="footer-slogan">Inteligencia en Medicina Estética.</h4>
+                            <img class="footer-logo" src="assets/logoCompleto.png" alt="Starbene" data-aos="fade-right">
+                            <h4 class="footer-slogan" data-aos-delay="200" data-aos="fade-right">Inteligencia en Medicina Estética.</h4>
                         </div>
-                        <div class="footer-links">
-                            <a href="index.html" class="links-footer">Home</a>
-                            <a href="" class="links-footer">Productos</a>
-                            <a href="" class="links-footer">Blog</a>
-                            <a href="" class="links-footer">Contacto</a>
-                        </div>
-                        <div class="footer-redes">
-                            <h3 class="footer-redes-titulo">Seguinos</h3>
-                            <div class="footer-redes-container">
-                                <a href="https://www.instagram.com/starbenecom/?hl=es-la" class="redes-footer" target="_blank">
-                                    <i class="bi bi-instagram footer-redes-icono"></i>
-                                    <p></p>
-                                </a>
-                                <a href="https://es-la.facebook.com/starbene.online/" class="redes-footer" target="_blank">
-                                    <i class="bi bi-facebook footer-redes-icono"></i>
-                                    <p></p>
-                                </a>
-                                <a href="https://www.tiktok.com/discover/Starbene" class="redes-footer" target="_blank">
-                                    <i class="bi bi-tiktok footer-redes-icono"></i>
-                                    <p></p>
-                                </a>
-                                <a href="https://www.youtube.com/user/StarbeneMkt" class="redes-footer" target="_blank">
-                                    <i class="bi bi-youtube footer-redes-icono"></i>
-                                    <p></p>
-                                </a>
-                                <a href="https://www.linkedin.com/company/starbenemed/?originalSubdomain=ar" class="redes-footer" target="_blank">
-                                    <i class="bi bi-linkedin footer-redes-icono"></i>
-                                    <p></p>
-                                </a>
-                                <a href="mailto:stabene@gmail.com" class="redes-footer" target="_blank">
-                                    <i class="bi bi-envelope-fill footer-redes-icono"></i>
-                                    <p></p>
-                                </a>
+                        <div class="footer-link-redes">
+                            <div class="footer-links">
+                                <a href="index.html" class="links-footer active" data-aos="fade-up"><span></span>Home</a>
+                                <a href="" class="links-footer" data-aos="fade-up" data-aos-delay="200"><span></span>Productos</a>
+                                <a href="" class="links-footer" data-aos="fade-up" data-aos-delay="300"><span></span>Blog</a>
+                                <a href="" class="links-footer" data-aos="fade-up" data-aos-delay="400"><span></span>Contacto</a>
+                            </div>
+                            <div class="footer-redes">
+                                <h3 class="footer-redes-titulo" data-aos="fade-up">Seguinos</h3>
+                                <div class="footer-redes-container">
+                                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
+                                        <div class="redes">
+                                            <a href="https://www.instagram.com/starbenecom/?hl=es-la" class="redes-footer" target="_blank" >
+                                                <i class="bi bi-instagram footer-redes-icono"></i>
+                                                <p></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-up" data-aos-delay="300">
+                                        <div class="redes">
+                                            <a href="https://es-la.facebook.com/starbene.online/" class="redes-footer" target="_blank">
+                                                <i class="bi bi-facebook footer-redes-icono"></i>
+                                                <p></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-up" data-aos-delay="400">
+                                        <div class="redes">
+                                            <a href="https://www.tiktok.com/discover/Starbene" class="redes-footer" target="_blank">
+                                                <i class="bi bi-tiktok footer-redes-icono"></i>
+                                                <p></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-up" data-aos-delay="500">
+                                        <div class="redes">
+                                            <a href="https://www.youtube.com/user/StarbeneMkt" class="redes-footer" target="_blank">
+                                                <i class="bi bi-youtube footer-redes-icono"></i>
+                                                <p></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-up" data-aos-delay="600">
+                                        <div class="redes">
+                                            <a href="https://www.linkedin.com/company/starbenemed/?originalSubdomain=ar" class="redes-footer" target="_blank">
+                                                <i class="bi bi-linkedin footer-redes-icono"></i>
+                                                <p></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-up" data-aos-delay="700">
+                                        <div class="redes">
+                                            <a href="mailto:stabene@gmail.com" class="redes-footer" target="_blank">
+                                                <i class="bi bi-envelope-fill footer-redes-icono"></i>
+                                                <p></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <hr class="footer-line">
                     <div class="footer-copyright">
-                        <p class="footer-copy">&copy; 2022 - Starbene</p>
-                        <a class="footer-pablo" href="https://pablo220288.github.io/Portafolio_2022/" target="_blank">Pablo Hernandez</a>
+                        <div data-aos="fade-right" data-aos-offset="-100">
+                            <p class="footer-copy">&copy; 2022 - Starbene</p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-offset="-100">
+                            <a class="footer-pablo" href="https://pablo220288.github.io/Portafolio_2022/" target="_blank">Pablo Hernandez</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init({duration: 2000,once:true});</script>
+        <!--JavaScript-->
+        <script src="js/loader.js"></script>
         <script src="js/nav.js"></script>
     </body>
 </html>

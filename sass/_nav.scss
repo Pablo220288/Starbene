@@ -25,6 +25,17 @@
                 margin: 0 10px;
                 position: relative;
                 text-shadow: 0px 0px 10px $black;
+                -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                &:nth-child(2){
+                    animation-delay: 0.1s;
+                }
+                &:nth-child(3){
+                    animation-delay: 0.2s;
+                }
+                &:nth-child(4){
+                    animation-delay: 0.3s;
+                }
                 span{
                     position: absolute;
                     background: $azulOscuro;
@@ -52,6 +63,10 @@
             outline: none;
             background: none;
             cursor: pointer;
+            .hamburger-container{
+                -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
             span{
                 display: block;
                 width: 25px;
@@ -91,6 +106,30 @@
                 }
             } 
         } 
+    }
+}
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
     }
 }
 .nav-mobile {
@@ -154,6 +193,9 @@
 
 @media(min-width:768px){
     .nav .navContainer{
+        .icono-nav{
+            width: 150px;
+        }
         .hamburger{
             display: none;
         }
