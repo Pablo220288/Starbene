@@ -10,6 +10,8 @@
         <!--Info Page-->
         <title>Starbene | Venta de Equipos de Medicina Estética</title>
         <link rel="icon" href="assets/iconoStarbene.png">
+        <!--Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <!--AOS-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--CSS-->
@@ -25,7 +27,7 @@
                 </div>
             </div>
             <nav class="nav">
-                <div class="navContainer">
+                <div class="nav-container">
                     <img class="icono-nav" src="assets/logoCompleto.png" alt="Icono Starbene">
                     <div class="menu">
                         <a href="#home" class="active"><span></span>Home</a>
@@ -44,10 +46,10 @@
             </nav>
             <nav class="nav-mobile">
                 <div class="nav-mobile-container">
-                    <a href="#home"><span></span><p>Home</p></a>
-                    <a href="#about"><span></span><p>Productos</p></a>
-                    <a href="#"><span></span><p>Blog</p></a>
-                    <a href="#"><span></span><p>Contacto</p></a>
+                    <a href="#home"><span></span><p class="nav-mobile-text">Home</p></a>
+                    <a href="#about"><span></span><p class="nav-mobile-text">Productos</p></a>
+                    <a href="#"><span></span><p class="nav-mobile-text">Blog</p></a>
+                    <a href="#"><span></span><p class="nav-mobile-text">Contacto</p></a>
                 </div>
             </nav>
         </header>
@@ -55,20 +57,171 @@
             <section class="main-container">
                 <div class="fondo-index">
                     <div class="capa"></div>
+                    <div class="starbene">
+                        <img class="starbene-icono" src="assets/iconoStarbene.png" alt="Icono Starbene">
+                        <h1 class="starbene-text">Starbene</h1>
+                    </div>
                     <p class="slogan">Medicina Estetica de Alta Tecnologia</div>
                 </div>
                 <div class="productos-index-container">
+                    <div class="productos-title-container" data-aos="fade-right">
+                        <h2 class="productos-title">Nuestros Productos</h2>
+                    </div>
                     <div class="productos-index">
+                        <div id="productos-carrusel" class="carousel carousel-dark slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#productos-carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#productos-carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#productos-carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#productos-carrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="productos">
+                                    <img class="producto-img" src="assets/mioup1.jpg" alt="Mio Up">
+                                    <div class="producto-description">
+                                        <h3 class="producto-title-description">Mio Up</h3>
+                                        <p class="producto-text">Tonifica la musculatura produciendo una contracción muscular por encima de la contracción que se puede lograr con el ejercicio normal.</p>
+                                        <div class="productos-botons">
+                                            <button class="productos-boton">Mas Info</button>
+                                            <button class="productos-boton">Contacto</button>
+                                        </div>
+                                    </div>
+                                    <div class="producto-beneficios">
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>Intensidad</strong> del campo magnético <strong>70000 Gauss o 7 Teslas</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>Frecuencia</strong> de contracciones hasta <strong>100 Hz</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Hasta <strong>30 mil contracciones</strong> musculares en 30 minutos.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>2 amplificadores</strong> trabajando de manera <strong>sincrónica o independiente</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Sistema de <strong>refrigeración por agua</strong>.</p>
+                                        </div>
+                                        <img class="beneficio-img" src="assets/mioup2.png" alt="Amplificador MioUp">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="productos">
+                                    <img class="producto-img" src="assets/alphasynergy1.png" alt="Alpha Synergy">
+                                    <div class="producto-description">
+                                        <h3 class="producto-title-description">Alpha Synergy</h3>
+                                        <p class="producto-text">Disminuye las arrugas, esculpe el cuerpo y trata la celulitis en todos sus estadíos.</p>
+                                        <div class="productos-botons">
+                                            <button class="productos-boton">Mas Info</button>
+                                            <button class="productos-boton">Contacto</button>
+                                        </div>
+                                    </div>
+                                    <div class="producto-beneficios">
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>Radiofrecuencia Multipolar</strong>  de  <strong>1 MHZ</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>Vacum-dermo-movilización</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>4 aplicadores</strong> ergonómicos: dos <strong>corporales</strong>, uno <strong>facial</strong> y uno de <strong>extremidades</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Aplicación durante <strong>todo el año</strong> y sin periodos de reposo.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>Combinable</strong> con otros tratamientos médico- estéticos.</p>
+                                        </div>
+                                        <img class="beneficio-img" src="assets/alphasynergy2.png" alt="Aplicador Alpha Synergy">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="productos">
+                                    <img class="producto-img" src="assets/boltthree1.jpg" alt="Bolt Three">
+                                    <div class="producto-description">
+                                        <h3 class="producto-title-description">Bolt Three</h3>
+                                        <p class="producto-text">Láser de Diodo Optical Fiber que optimiza en más de un 200% la energía lumínica en comparación a otros láseres.</p>
+                                        <div class="productos-botons">
+                                            <button class="productos-boton">Mas Info</button>
+                                            <button class="productos-boton">Contacto</button>
+                                        </div>
+                                    </div>
+                                    <div class="producto-beneficios">
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>Vida útil</strong> del cabezal <strong>50.000.000 de disparos</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Aplicación en <strong>Fototipos I-VI</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Aplicador <strong>TRÍO</strong> que integra tres longitudes de onda: <strong>755nm, 810nm y1064nm</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Ancho de pulso: <strong>5~750 ms</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Sistema de <strong>refrigeración</strong> por circuitpo cerrado de <strong>agua destilada</strong>.</p>
+                                        </div>
+                                        <img class="beneficio-img" src="assets/boltthree2.png" alt="Aplicador Bolt Three">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="productos">
+                                    <img class="producto-img" src="assets/hifu7d1.png" alt="HIFU 7D">
+                                    <div class="producto-description">
+                                        <h3 class="producto-title-description">HIFU 7D</h3>
+                                        <p class="producto-text">Láser de Diodo Optical Fiber que optimiza en más de un 200% la energía lumínica en comparación a otros láseres.</p>
+                                        <div class="productos-botons">
+                                            <button class="productos-boton">Mas Info</button>
+                                            <button class="productos-boton">Contacto</button>
+                                        </div>
+                                    </div>
+                                    <div class="producto-beneficios">
+                                        <div class="beneficio">
+                                            <p class="beneficio-description"><strong>Vida útil</strong> del cabezal <strong>50.000.000 de disparos</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Aplicación en <strong>Fototipos I-VI</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Aplicador <strong>TRÍO</strong> que integra tres longitudes de onda: <strong>755nm, 810nm y1064nm</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Ancho de pulso: <strong>5~750 ms</strong>.</p>
+                                        </div>
+                                        <div class="beneficio">
+                                            <p class="beneficio-description">Sistema de <strong>refrigeración</strong> por circuitpo cerrado de <strong>agua destilada</strong>.</p>
+                                        </div>
+                                        <img class="beneficio-img" src="assets/hifu7d2.png" alt="Transductor HIFU 7D">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev prev" type="button" data-bs-target="#productos-carrusel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next next" type="button" data-bs-target="#productos-carrusel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                     </div>
                 </div>
                 <div class="frabicantes-index">
-                    <h2 class="fabricantes-title">Somos Fabricantes</h2>
+                    <div class="fabricantes-title-container" data-aos="fade-right">
+                        <h2 class="fabricantes-title">Somos Fabricantes</h2>
+                    </div>
                     <div class="fabricantes-container">
                         <section class="fabricantes-caract">
                             <div class="caract">
-                                <div class="icono" >
-                                    <img src="assets/objetivo.png" alt="Objetivo" data-aos="flip-down">
+                                <div class="icono">
+                                    <ion-icon class="iconos" name="rocket-outline" data-aos="flip-down"></ion-icon>
                                 </div>
                                 <div class="title-text">
                                     <div class="title" data-aos="zoom-in" data-aos-delay="100">
@@ -81,7 +234,7 @@
                             </div>
                             <div class="caract">
                                 <div class="icono">
-                                    <img src="assets/garantia.png" alt="Garantias" data-aos="flip-down">
+                                    <ion-icon class="iconos" name="ribbon-outline" data-aos="flip-down"></ion-icon>
                                 </div>
                                 <div class="title-text">
                                     <div class="title" data-aos="zoom-in" data-aos-delay="100">
@@ -96,7 +249,7 @@
                         <section class="capaitacion-servicio">
                             <div class="caract">
                                 <div class="icono">
-                                    <img src="assets/capacitacion.png" alt="Capacitación" data-aos="flip-down">
+                                    <ion-icon class="iconos" name="school-outline" data-aos="flip-down"></ion-icon>
                                 </div>
                                 <div class="title-text">
                                     <div class="title" data-aos="zoom-in" data-aos-delay="100">
@@ -109,19 +262,89 @@
                             </div>
                             <div class="caract">
                                 <div class="icono">
-                                    <img src="assets/soporte-tecnico.png" alt="Srevicio Técnico" data-aos="flip-down">
+                                    <ion-icon class="iconos" name="hammer-outline" data-aos="flip-down"></ion-icon>
                                 </div>
                                 <div class="title-text">
                                     <div class="title" data-aos="zoom-in" data-aos-delay="100">
                                         <h4>Srevicio Técnico</h4>
                                     </div>
                                     <div class="text" data-aos="zoom-in" data-aos-delay="200">
-                                        <p>Siempre disponibles para dar respuesta a todas tus consultas y requerimientos técnicos.</p>
+                                        <p>Respondemos a todas tus consultas y requerimientos técnicos.</p>
                                     </div>
                                 </div>
                             </div>
                         </section>
                     </div>
+                </div>
+                <div class="capacitacion-index">
+                    <div class="capacitacion-title-container" data-aos="fade-right">
+                        <h2 class="capacitacion-title">Te Capacitamos</h2>
+                    </div>
+                    <div class="capacitacion-container">
+                        <div class="capacitacion-img-text">
+                            <img class="capacitacion-img" src="assets/capacitacionImg.png" alt="Capacitación Starbene" data-aos="fade-right" data-aos-delay="100">
+                            <p class="capacitacion-text-xs" data-aos="fade-right" data-aos-delay="200">Actualizamos los conocimientos de nuestros clientes de acuerdo a las nuevas tecnologías.</p>
+                        </div>
+                        <div class="capacitacion-caract">
+                            <p class="capacitacion-text" data-aos="fade-left" data-aos-delay="300">Buscamos capacitar a nuestros clientes en todo lo referido a nuestros equipos y sus terapias.</p>
+                            <div class="capacitacion-caract-1">
+                                <div class="caract-capacitacion" data-aos="fade-up" data-aos-delay="400">
+                                    <h4 class="caract-title">Conferencias</h4>
+                                    <div class="caract-num-container">
+                                        <span class="caract-num" data-cantidad-total="332">0</span>
+                                        <span class="caract-simbolo">+</span>
+                                    </div>
+                                </div>
+                                <div class="caract-capacitacion" data-aos="fade-up" data-aos-delay="500">
+                                    <h4 class="caract-title">Tutoriales</h4>
+                                    <div class="caract-num-container">
+                                        <span class="caract-num" data-cantidad-total="145">0</span>
+                                        <span class="caract-simbolo">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capacitacion-caract-2">
+                                <div class="caract-capacitacion" data-aos="fade-up" data-aos-delay="600">
+                                    <h4 class="caract-title">Estudios</h4>
+                                    <div class="caract-num-container">
+                                        <span class="caract-num" data-cantidad-total="45">0</span>
+                                        <span class="caract-simbolo">+</span>
+                                    </div>
+                                </div>
+                                <div class="caract-capacitacion" data-aos="fade-up" data-aos-delay="700">
+                                    <h4 class="caract-title">Ebooks</h4>
+                                    <div class="caract-num-container">
+                                        <span class="caract-num" data-cantidad-total="32">0</span>
+                                        <span class="caract-simbolo">+</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boton-capacitacion-container" data-aos="fade-up" data-aos-delay="800">
+                                <button class="boton-capacitacion">Contactanos</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="visitanos-index">
+                    <div class="visitanos-direccion-mapa">
+                        <div class="visitanos-direccion">
+                            <div class="visitanos-title-container" data-aos="fade-right">
+                                <h2 class="visitanos-title">Queremos Conocerte</h2>
+                            </div>
+                            <div class="visitanos-direccion-img-txt">
+                                <img class="visitanos-direccion-img" src="assets/office-building.png" alt="Casa Matriz" data-aos="fade-up" data-aos-delay="100">
+                                <p class="visitanos-direccion-text-1" data-aos="fade-up" data-aos-delay="100">Casa Matriz</p>
+                            </div>
+                            <p class="visitanos-direccion-text-2" data-aos="fade-left" data-aos-delay="300">David Luque 511, Córdoba Capital, Argentina.</p>
+                            <div class="boton-visitanos-container" data-aos="fade-up" data-aos-delay="400">
+                                <button class="boton-visitanos">Organizar Visita</button>
+                            </div>
+                        </div>
+                        <iframe class="visitanos-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1095485332467!2d-64.17194028542878!3d-31.41110770313852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a046f40001%3A0x839cb6da6539dd59!2sStarbene%20Medicina%20Est%C3%A9tica!5e0!3m2!1ses-419!2sar!4v1664234051044!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                 </div>
             </section>
         </main>
@@ -208,6 +431,10 @@
                 </div>
             </div>
         </footer>
+        <!--Ionicons-->
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <!--AOS-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init({duration: 2000,once:true});</script>

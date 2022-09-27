@@ -5,8 +5,8 @@
     right: 0;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.454);
-    .navContainer{
-        max-width: 100%;
+    .nav-container{
+        width: 100%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -171,16 +171,17 @@
                 left: -1%;
                 transition: .4s;
             }
-            p{
+            .nav-mobile-text{
                 font-weight: 400;
                 position: relative;
                 transition: .4s;
+                margin: 0.3rem 0;
             }
             &:hover span {
                 border-radius: 5px;
                 width: 101%;
             }
-            &:hover p {
+            &:hover .nav-mobile-text {
                 font-weight: 600;
                 color: $black;
             }
@@ -192,7 +193,7 @@
 }
 
 @media(min-width:768px){
-    .nav .navContainer{
+    .nav .nav-container{
         .icono-nav{
             width: 150px;
         }
