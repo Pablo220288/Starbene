@@ -5,52 +5,55 @@
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url("../../assets/homeIndex.jpg");
-        background-position: 50% 50%;
-        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: -1;
+        overflow: hidden;
+        video{
+            position: absolute;
+            min-width: 80%;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.9;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .fondo-img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            filter: drop-shadow(0px 0px 10px $black);
+            -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation-delay: 2s;
+        }
         .capa{
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #ffffff40;
+            background-color: #00000039;
             z-index: -1;
-        }
-        .starbene{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            .starbene-icono{
-                width: 100px;
-            }
-            .starbene-text{
-                margin: 0;
-                font-family: 'Montserrat', sans-serif; 
-                font-size: 3rem;           
-            }
         }
         .slogan{
             width: 100%;
             padding: 0 20px;
             position: absolute;
             left: 50%;
-            bottom: 5%;
-            transform: translate(-50%, -10%);
-            color: $azulOscuro;
+            bottom: 15%;
+            transform: translate(-50%, -20%);
+            color: $white;
             font-size: 1.8rem;
             font-weight: 500;
             text-align: center;
+            text-shadow: 0px 0px 10px $black;
+            -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation-delay: 3s;
         }
     }
     .productos-index-container{
@@ -65,9 +68,11 @@
             .productos-title{
                 color: $azulOscuro;
                 font-size: 1.5rem;
+                font-weight: 600;
                 margin-bottom: 10px;
                 position: relative;
-                transition: 0.5s;
+                transition: 0.5s linear;
+                opacity: 0.9;
                 &::before{
                     content: '';
                     position: absolute;
@@ -81,6 +86,10 @@
                 }
                 &:hover::before{
                     left: 105%;
+                }
+                &:hover{
+                    opacity: 1;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -101,9 +110,6 @@
                     margin-bottom: 60px;
                     .producto-img{
                         width: 200px;
-                        -webkit-animation: slide-in-bottom 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                        animation: slide-in-bottom 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                        animation-delay: 0.3s;
                     }
                     .producto-description{
                         width: 90%;
@@ -111,7 +117,7 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        gap: 10px;
+                        gap: 20px;
                         .producto-title-description{
                             font-weight: 700;
                             -webkit-animation: slide-in-bottom 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -139,8 +145,9 @@
                             .productos-boton{
                                 width: 120px;
                                 color: $white;
-                                background-color: $azulPrimario;
-                                border: none;
+                                text-decoration: none;
+                                text-align: center;
+                                background-color: $azulSecundario;
                                 border-radius: 6px;
                                 padding: 10px;
                                 font-size: 1.1rem;
@@ -154,6 +161,10 @@
                     }
                     .producto-beneficios{
                         display: none;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        gap: 20px;
                         position: relative;
                         width: 700px;
                         transition: 0.3s ease;
@@ -179,15 +190,11 @@
                                     content: '';
                                     position: absolute;
                                     top: 50%;
-                                    left: -5%;
+                                    left: -15px;
                                     transform: translateY(-50%);
                                     width: 2px;
                                     height: 100%;
                                     background-color: $azulPrimario;
-                                    transition: 1s;
-                                }
-                                &:hover::before{
-                                    left: 105%;
                                 }
                             }
                         }
@@ -240,9 +247,14 @@
                     height: 100%;
                     background-color: $verde;
                     transition: 1s;
+                    opacity: 0.9;
                 }
                 &:hover::before{
                     left: 105%;
+                }
+                &:hover{
+                    opacity: 1;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -355,9 +367,14 @@
                     height: 100%;
                     background-color: $azulPrimario;
                     transition: 1s;
+                    opacity: 0.9;
                 }
                 &:hover::before{
                     left: 105%;
+                }
+                &:hover{
+                    opacity: 1;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -486,9 +503,14 @@
                         height: 100%;
                         background-color: $azulPrimario;
                         transition: 1s;
+                        opacity: 0.9;
                     }
                     &:hover::before{
                         left: 105%;
+                    }
+                    &:hover{
+                        opacity: 1;
+                        transform: scale(1.1);
                     }
                 } 
             }
@@ -564,9 +586,47 @@
       opacity: 1;
     }
 }
-  
+
+@-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: translate(-50%, -50%) scale(2);
+              transform: translate(-50%, -50%) scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: translate(-50%, -50%) scale(2);
+              transform: translate(-50%, -50%) scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+
 @media(min-width:600px){
     .main-container{
+        .fondo-index{
+            .fondo-img{
+                width: 480px;
+            }
+        }
         .frabicantes-index{
             .fabricantes-title-container{
                 align-self: flex-start;
@@ -631,13 +691,23 @@
 }
 @media(min-width:1000px){
     .main-container{
+        .fondo-index{
+            .fondo-img{
+                width: 60%;
+            }
+        }
         .productos-index-container{
+            .productos-title-container{
+                .productos-title{
+                    font-size: 2rem;
+                }
+            }
             .productos-index{
                 .carousel{
                     .productos{
                         gap: 50px;
                         .producto-beneficios{
-                            display: block;
+                            display: flex;
                         }
                     }
                 }
@@ -658,6 +728,19 @@
                     height: 150px;
                     gap: 20px;
                     flex-direction: row;
+                }
+            }
+        }
+        .productos-index-container{
+            .productos-index{
+                .carousel{
+                    .productos{
+                        .producto-img{
+                            -webkit-animation: slide-in-bottom 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                            animation: slide-in-bottom 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                            animation-delay: 0.3s;
+                        }
+                    }
                 }
             }
         }
