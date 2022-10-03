@@ -1,0 +1,940 @@
+.main-mioup-container{
+    position: relative;
+    width: 100%;
+    .fondo-mioup{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        .fondo-img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
+        .capa{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0000006d;
+        }
+        .productos-title-container{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            width: 100%;
+              .productos-title{
+                color: $white;
+                font-size: 3rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 10px;
+                position: relative;
+                transition: 0.5s linear;
+                text-shadow: 0px 0px 10px $black;
+            }
+        }
+        .slogan{
+            width: 100%;
+            padding: 0 20px;
+            position: absolute;
+            left: 50%;
+            bottom: 15%;
+            transform: translate(-50%, -20%);
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-align: center;
+            text-shadow: 0px 0px 10px $black;
+        }
+    }
+    .mioup-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 0px;
+        .productos{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 60px 0px 0px 0px;
+            .prod-title-botons{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .producto-title-img-conten{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .producto-title-img{
+                        width: 200px;
+                        max-width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        .producto-title{
+                            align-self: flex-start;
+                            font-size: 3rem;
+                            font-weight: 600;
+                        }
+                        .logo-starbene-img{
+                            align-self: flex-end;
+                            width: 100px;
+                            position: relative;
+                            &:before{
+                                content: 'by';
+                                position: absolute;
+                                top: 0;
+                                left: -15px;
+                                color: $black;
+                                font-style: italic;
+                                opacity: 0.7;
+                                font-size: 0.6rem;
+                            }
+                            .logo-starbene{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .prod-botons{
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    .productos-botons{
+                        width: 90%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        .prod-boton{
+                            width: 120px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .productos-boton{
+                                width: 100%;
+                                justify-self: end;
+                                color: $white;
+                                text-decoration: none;
+                                text-align: center;
+                                background-color: $azulSecundario;
+                                border-radius: 6px;
+                                padding: 10px;
+                                font-size: 1.1rem;
+                                box-shadow: 0px 0px 5px #0000007a;
+                                transition: transform 300ms ease;
+                                &:hover{
+                                    transform: scale(0.97);
+                                }
+                            }
+                            .cotizar{
+                                background-color: $verde;
+                                color: $black;
+                            } 
+                        }
+                    }
+                    .producto-dowloand{
+                        width: 100%;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        .producto-dowloand-enlace{
+                            width: 100px;
+                            text-decoration: none;
+                            color: $black;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            .producto-dowloand-icono{
+                                opacity: 0.8;
+                                font-size: 3rem;
+                                transition: all 0.2s ease-out;
+                                color: $azulSecundario;
+                                &:hover{
+                                    color: $red;
+                                    opacity: 1;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .producto-conten{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                .producto-block{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    .producto-img{
+                        width: 300px;
+                    }
+                    .producto-description{
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 40px;
+                        .producto-title-description{
+                            text-align: center;
+                            font-weight: 700;
+                            position: relative;
+                            transition: 0.5s linear;
+                            opacity: 0.9;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                left: -5%;
+                                transform: translateY(-50%);
+                                width: 4px;
+                                height: 100%;
+                                background-color: $azulSecundario;
+                                transition: 1s;
+                            }
+                            &:hover::before{
+                                left: 105%;
+                            }
+                            &:hover{
+                                opacity: 1;
+                                transform: scale(1.1);
+                            }
+                        }
+                        .producto-text{
+                            width: 90%;
+                            text-align: center;
+                        }
+                        .producto-dowloand{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            .producto-dowloand-enlace{
+                                width: 100px;
+                                text-decoration: none;
+                                color: $black;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                .producto-dowloand-icono{
+                                    opacity: 0.8;
+                                    font-size: 3rem;
+                                    transition: all 0.2s ease-out;
+                                    color: $azulSecundario;
+                                    &:hover{
+                                        color: $red;
+                                        opacity: 1;
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
+                        .productos-botons{
+                            width: 90%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            .prod-boton{
+                                width: 120px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .productos-boton{
+                                    width: 100%;
+                                    justify-self: end;
+                                    color: $white;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    background-color: $azulSecundario;
+                                    border-radius: 6px;
+                                    padding: 10px;
+                                    font-size: 1.1rem;
+                                    box-shadow: 0px 0px 5px #0000007a;
+                                    transition: transform 300ms ease;
+                                    &:hover{
+                                        transform: scale(0.97);
+                                    }
+                                }
+                                .cotizar{
+                                    background-color: $verde;
+                                    color: $black;
+                                } 
+                            }
+                        }
+                    }
+                    .producto-beneficios{
+                        display: none;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        gap: 20px;
+                        position: relative;
+                        width: 700px;
+                        transition: 0.3s ease;
+                        .beneficio{
+                            -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                            animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                            &:nth-child(2){
+                                animation-delay: 0.1s;
+                            }
+                            &:nth-child(3){
+                                animation-delay: 0.3s;
+                            }
+                            &:nth-child(4){
+                                animation-delay: 0.5s;
+                            }
+                            &:nth-child(5){
+                                animation-delay: 0.7s;
+                            }
+                            .beneficio-description{
+                                position: relative;
+                                transition: 0.5s;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -15px;
+                                    transform: translateY(-50%);
+                                    width: 2px;
+                                    height: 100%;
+                                    background-color: $azulPrimario;
+                                }
+                            }
+                        }
+                        .beneficio-img{
+                            position: absolute;
+                            width: 70%;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: -1;
+                            opacity: 0.3;
+        
+                        }
+                    }
+                }
+                .producto-block-drc{
+                    .producto-aplicadores{
+                        display: none;
+                        position: absolute;
+                        width: 400px;
+                        justify-content: center;
+                        align-items: center;
+                        top: -180px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: -1;
+                        .aplicadores{
+                            position: relative;
+                            .producto-aplicadores-img{
+                                width: 100%;
+                            }
+                            .capa-aplicadores{
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 50%;
+                                background: linear-gradient(to top, #fff, transparent);
+                            }  
+                        }
+                    }
+                }
+                .producto-block-gallery{
+                    width: 100%;
+                    background-color: $azulOscuro;
+                    padding: 40px 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .producto-gallery-video{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 30px;
+                        .galley-producto{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 40px;
+                            .gallery-title{
+                                text-align: center;
+                                font-weight: 700;
+                                color: $white;
+                                position: relative;
+                                transition: 0.5s linear;
+                                opacity: 0.9;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -10%;
+                                    transform: translateY(-50%);
+                                    width: 4px;
+                                    height: 100%;
+                                    background-color: $verde;
+                                    transition: 1s;
+                                }
+                                &:hover::before{
+                                    left: 110%;
+                                }
+                                &:hover{
+                                    opacity: 1;
+                                    transform: scale(1.1);
+                                }
+                            }
+                            .carousel{
+                                .carousel-inner{
+                                    width: 90%;
+                                    margin: auto;
+                                    border-radius: 6px;
+                                }
+                                .carousel-control-prev{
+                                    justify-content: end;
+                                }
+                                .carousel-control-next{
+                                    justify-content: start;
+                                }
+                            }
+                        }
+                        .video-producto{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 40px;
+                            .video-title{
+                                text-align: center;
+                                font-weight: 700;
+                                color: $white;
+                                position: relative;
+                                transition: 0.5s linear;
+                                opacity: 0.9;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -7%;
+                                    transform: translateY(-50%);
+                                    width: 4px;
+                                    height: 100%;
+                                    background-color: $verde;
+                                    transition: 1s;
+                                }
+                                &:hover::before{
+                                    left: 107%;
+                                }
+                                &:hover{
+                                    opacity: 1;
+                                    transform: scale(1.1);
+                                }
+                            }
+                            .videos{
+                                width: 90%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 50px;
+                                .video{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .video-mioup{
+                                        border-radius: 6px;
+                                        width: 100%;
+                                        height: 200px;
+                                    }
+                                }
+                            }
+                            .video-pie{
+                                width: 90%;
+                                display: none;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 30px;
+                                .pie-title{
+                                    color: $white;
+                                }
+                                .pie-caract{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                    gap: 30px; 
+                                    .caract{
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 30px;
+                                        margin-top: 10px;
+                                        .icono{
+                                            width: 70px;
+                                            opacity: 0.8;
+                                            transition: all 0.5s ease-out;
+                                            display: flex;
+                                            justify-content: center;
+                                            .iconos{
+                                                font-size: 3rem;
+                                                color: $white;
+                                            }
+                                            &:hover{
+                                                opacity: 1;
+                                                transform: scale(1.2);
+                                            }
+                                        }
+                                        .text{
+                                            padding: 0px 20px;
+                                            text-align: center;
+                                            color: $white;
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .producto-block-izq{
+                    .producto-beneficios{
+                        display: none;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        gap: 20px;
+                        position: relative;
+                        width: 700px;
+                        .producto-beneficios-title{
+                            align-self: center;
+                            font-weight: 700;
+                            margin-bottom: 20px;
+                        }
+                        .beneficio{
+                            .beneficio-description{
+                                position: relative;
+                                transition: 0.5s;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -15px;
+                                    transform: translateY(-50%);
+                                    width: 4px;
+                                    height: 100%;
+                                    background-color: $azulSecundario;
+                                    transition: 1s;
+                                }
+                            }
+                        }
+                    }
+                }
+                .producto-referencias{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    .referencias-title{
+                        text-align: center;
+                        font-weight: 700;
+                        color: $black;
+                        position: relative;
+                        transition: 0.5s linear;
+                        opacity: 0.9;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: -10%;
+                            transform: translateY(-50%);
+                            width: 4px;
+                            height: 100%;
+                            background-color: $verde;
+                            transition: 1s;
+                        }
+                        &:hover::before{
+                            left: 110%;
+                        }
+                        &:hover{
+                            opacity: 1;
+                            transform: scale(1.1);
+                        }
+                    }
+                    .carousel{
+                        width: 100%;
+                        .carousel-indicators{
+                            bottom: -45px;
+                        }
+                        .referencias-card{
+                            width: 75%;
+                            height: 240px;
+                            margin: auto;
+                            background-color: $lilaSuave;
+                            padding: 10px 20px;
+                            border-radius: 6px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 20px;
+                            .avatar-stars{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                .card-avatar{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 40px;
+                                    .avatar-img{
+                                        width: 65px;
+                                        border-radius: 50%;
+                                        box-shadow: 0px 1px 5px $black;
+                                    }
+                                    .avatar-nombre{
+                                        font-size: 1.2rem;
+                                        font-weight: 500;
+                                        text-align: center;
+                                        position: relative;
+                                        &::before{
+                                            content: '';
+                                            position: absolute;
+                                            top: 50%;
+                                            left: -15px;
+                                            transform: translateY(-50%);
+                                            width: 4px;
+                                            height: 100%;
+                                            background-color: $azulSecundario;
+                                            transition: 1s;
+                                        }
+        
+                                    }
+                                }
+                                .card-stars{
+                                    color: gold;
+                                }
+                            }
+                            .card-comentario{
+                                font-style: italic;
+                                text-align: center;
+                                .bi-quote{
+                                    width: 25px;
+                                    
+                                }
+                                .quote-end{
+                                    transform: rotate(180deg);
+                                }
+    
+                            }
+                        }
+                    }
+
+
+                }
+                .producto-contacto{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 40px 10px;
+                    .contacto-icono{
+                        width: 50px;
+                    }
+                    .contacto-text{
+                        text-align: center;
+                        font-weight: 700;
+                        color: $black;
+                        position: relative;
+                        transition: 0.5s linear;
+                        opacity: 0.9;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: -7%;
+                            transform: translateY(-50%);
+                            width: 4px;
+                            height: 100%;
+                            background-color: $verde;
+                        }
+                    }
+                    .productos-botons{
+                        width: 90%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        .prod-boton{
+                            width: 120px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .productos-boton{
+                                width: 100%;
+                                justify-self: end;
+                                color: $white;
+                                text-decoration: none;
+                                text-align: center;
+                                background-color: $azulSecundario;
+                                border-radius: 6px;
+                                padding: 10px;
+                                font-size: 1.1rem;
+                                box-shadow: 0px 0px 5px #0000007a;
+                                transition: transform 300ms ease;
+                                &:hover{
+                                    transform: scale(0.97);
+                                }
+                            }
+                            .cotizar{
+                                background-color: $verde;
+                                color: $black;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+}
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+}
+
+@media(min-width:730px){
+    .main-mioup-container{
+        .mioup-container{
+            .productos{
+                .prod-title-botons{
+                    .producto-title-img-conten{
+                        flex: 1;
+                    }
+                    .prod-botons{
+                        flex: 1;
+                        display: flex;
+                        .productos-botons{
+                            gap: 30px;
+                        }
+                    }
+                }
+                .producto-conten{
+                    .producto-block{
+                        margin: auto;
+                        margin-bottom: 30px;
+                        flex-direction: row;
+                        .producto-description{
+                            .productos-botons{
+                                display: none;
+                            }
+                        }
+                    }
+                    .producto-block-drc{
+                        flex-direction: row-reverse;
+                        position: relative;
+                    }
+                    .producto-block-gallery{
+                        .producto-gallery-video{
+                            flex-direction: row;
+                            align-items: flex-start;
+                            .galley-producto{
+                                .carousel{
+                                    .carousel-inner{
+                                        width: 300px;
+                                    }
+                                }
+                            }
+                            .video-producto{
+                                .videos{
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+                    .producto-referencias{
+                        .carousel{
+                            .referencias-card{
+                                height: auto;
+                                flex-direction: row;
+                                justify-content: center;
+                                .avatar-stars{
+                                    flex: 1;
+                                    gap: 0;
+                                }
+                                .card-comentario{
+                                    flex: 2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:1000px){
+    .main-mioup-container{
+        .mioup-container{
+            .productos{
+                .prod-title-botons{
+                    .producto-title-img-conten{
+                        flex: 1;
+                    }
+                    .prod-botons{
+                        flex: 2;
+                        width: 100%;
+                        justify-content: space-evenly;
+                        .productos-botons{
+                            flex: 1;
+                        }
+                        .producto-dowloand{
+                            flex: 1;
+                            display: flex;
+                            gap: 10px;
+                        }
+                    }
+                }
+                .producto-conten{
+                    .producto-block{
+                        gap: 50px;
+                        .producto-description{
+                            .producto-dowloand{
+                                display: none;
+                            }
+                        }
+                        .producto-beneficios{
+                            display: flex;
+                        }
+                    }
+                    .producto-block-drc{
+                        .producto-aplicadores{
+                            display: flex;
+                        }
+                    }
+                    .producto-block-gallery{
+                        .producto-gallery-video{
+                            .galley-producto{
+                                flex: 1;
+                                .carousel{
+                                    .carousel-inner{
+                                        width: 300px;
+                                    }
+                                }
+                            }
+                            .video-producto{
+                                flex: 2;
+                                .videos{
+                                    flex-direction: row;
+                                }
+                                .video-pie{
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                    .producto-block-izq{
+                        .producto-beneficios{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
