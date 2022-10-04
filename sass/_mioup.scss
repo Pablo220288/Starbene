@@ -553,6 +553,7 @@
                             margin-bottom: 20px;
                         }
                         .beneficio{
+                            animation: none;
                             .beneficio-description{
                                 position: relative;
                                 transition: 0.5s;
@@ -565,7 +566,6 @@
                                     width: 4px;
                                     height: 100%;
                                     background-color: $azulSecundario;
-                                    transition: 1s;
                                 }
                             }
                         }
@@ -737,6 +737,93 @@
                                 background-color: $verde;
                                 color: $black;
                             } 
+                        }
+                    }
+                }
+                .producto-interes{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    .interes-text{
+                        text-align: center;
+                        font-weight: 700;
+                        color: $black;
+                        position: relative;
+                        transition: 0.5s linear;
+                        opacity: 0.9;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: -7%;
+                            transform: translateY(-50%);
+                            width: 4px;
+                            height: 100%;
+                            background-color: $azulPrimario;
+                        }
+                    }
+                    .interes-producto{
+                        width: 90%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        gap: 20px;
+                        .interes-card{
+                            width: 280px;
+                            height: 50px;
+                            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.144);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            transition: 1s ease;
+                            overflow: hidden;
+                            .interes-img{
+                                width: 270px;
+                                height: 270px;
+                                background-position: center 4px;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%) scale(1.1);
+                                opacity: 0.5;
+                                transition: 1s ease;
+                            }
+                            .alpha{
+                                background-image: url('../../assets/alphasynergy3.png');
+                            }
+                            .bolt{
+                                background-image: url('../../assets/boltthree3.jpg');
+                            }
+                            .hifu{
+                                background-image: url('../../assets/hifu7d3.png');
+                            }
+                            .interes-title{
+                                width: 100%;
+                                position: absolute;
+                                bottom: 10px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                text-align: center;
+                                text-decoration: none;
+                                color: $azulOscuro;
+                                opacity: 1;
+                                transition: 1s ease;
+                            }
+                            &:hover .interes-img{
+                                opacity: 0.5;
+                                transform: translate(-50%, -50%) scale(1.1);
+                            }
+                            &:hover .interes-title{
+                                bottom: 10px;
+                                opacity: 1;
+                            }
                         }
                     }
                 }
@@ -931,6 +1018,27 @@
                     .producto-block-izq{
                         .producto-beneficios{
                             display: flex;
+                        }
+                    }
+                    .producto-interes{
+                        .interes-producto{
+                            .interes-card{
+                                .interes-img{
+                                    opacity: 1;
+                                }
+                                .interes-title{
+                                    bottom: -20px;
+                                    opacity: 0;
+                                }
+                                &:hover .interes-img{
+                                    opacity: 0.5;
+                                    transform: translate(-50%, -50%) scale(1.1);
+                                }
+                                &:hover .interes-title{
+                                    bottom: 10px;
+                                    opacity: 1;
+                                }
+                            }
                         }
                     }
                 }
