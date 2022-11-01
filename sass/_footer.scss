@@ -100,6 +100,7 @@
                     .footer-redes-container{
                         display: flex;
                         gap: 25px;
+                        margin-bottom: 20px;
                         .redes{
                             display: flex;
                             flex-direction: column;
@@ -107,7 +108,7 @@
                             align-items: center;
                             transition: all 0.5s ease-out;
                             &:hover{
-                                transform: scale(1.3);
+                                transform: scale(1.2);
                             }
                             .redes-footer{
                                 text-decoration: none;
@@ -120,6 +121,22 @@
                                 &:hover{
                                     opacity: 1;
                                 }
+                            }
+                        }
+                    }
+                    .footer-dicection{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 30px;
+                        .dicection-icon{
+                            font-size: 2rem;
+                            opacity: 0.8;
+                            transition: all 0.5s ease-out;
+                            &:hover{
+                                opacity: 1;
+                                transform: scale(1.2);
                             }
                         }
                     }
@@ -138,6 +155,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            gap: 10px;
             .footer-copy{
                 font-size: 0.8rem;
                 text-align: center;

@@ -817,12 +817,13 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 .main-container .visitanos-index .visitanos-direccion-mapa .visitanos-direccion .visitanos-direccion-img-txt {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 15%;
   align-items: center;
   gap: 30px;
 }
@@ -848,6 +849,7 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
   border-radius: 6px;
   padding: 10px 30px;
+  margin-top: 10px;
   font-size: 1.1rem;
   box-shadow: 0px 0px 5px #000000;
   transition: transform 300ms ease;
@@ -1620,6 +1622,9 @@ h1, h2, h3, h4, h5, h6, p {
 .main-prod-container .productos-container .productos .prod-title-botons .producto-title-img-conten .producto-title-img .logo-starbene-img .logo-starbene {
   width: 100%;
 }
+.main-prod-container .productos-container .productos .prod-title-botons .producto-title-img-conten .bolt {
+  width: 250px;
+}
 .main-prod-container .productos-container .productos .prod-title-botons .prod-botons {
   display: none;
   justify-content: center;
@@ -1737,6 +1742,9 @@ h1, h2, h3, h4, h5, h6, p {
 .main-prod-container .productos-container .productos .producto-conten .producto-block .producto-description .producto-title-description:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+.main-prod-container .productos-container .productos .producto-conten .producto-block .producto-description .masLeft::before {
+  left: -10%;
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-block .producto-description .producto-text {
   width: 90%;
@@ -1878,7 +1886,13 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   width: 100%;
   height: 50%;
-  background: linear-gradient(to top, #fff, transparent);
+  background: linear-gradient(to top, #ffffff, transparent);
+}
+.main-prod-container .productos-container .productos .producto-conten .producto-block-drc .bolt {
+  width: 180px;
+}
+.main-prod-container .productos-container .productos .producto-conten .producto-block-drc .hifu {
+  width: 300px;
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-block-gallery {
   width: 100%;
@@ -2629,6 +2643,7 @@ h1, h2, h3, h4, h5, h6, p {
 .footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-redes-container {
   display: flex;
   gap: 25px;
+  margin-bottom: 20px;
 }
 .footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-redes-container .redes {
   display: flex;
@@ -2638,7 +2653,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 0.5s ease-out;
 }
 .footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-redes-container .redes:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 .footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-redes-container .redes .redes-footer {
   text-decoration: none;
@@ -2652,6 +2667,22 @@ h1, h2, h3, h4, h5, h6, p {
 .footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-redes-container .redes .redes-footer:hover {
   opacity: 1;
 }
+.footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-dicection {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-dicection .dicection-icon {
+  font-size: 2rem;
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
+}
+.footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes .footer-dicection .dicection-icon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
 .footer .footer-container .footer-line {
   width: 100%;
   border: 1px solid #00FE82;
@@ -2664,6 +2695,7 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .footer .footer-container .footer-copyright .footer-copy {
   font-size: 0.8rem;

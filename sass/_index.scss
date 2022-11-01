@@ -520,11 +520,12 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: 30px;
+                gap: 20px;
                 .visitanos-direccion-img-txt{ 
                     width: 100%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
+                    margin-left: 15%;
                     align-items: center;
                     gap: 30px;
                     .visitanos-direccion-img{
@@ -551,6 +552,7 @@
                 border: none;
                 border-radius: 6px;
                 padding: 10px 30px;
+                margin-top: 10px;
                 font-size: 1.1rem;
                 box-shadow: 0px 0px 5px #000000;
                 transition: transform 300ms ease;
@@ -668,7 +670,6 @@
                         margin-left: 5%;
                     }
                 }
-
             }
         }
         .productos-index-container{

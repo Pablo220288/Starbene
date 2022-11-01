@@ -114,6 +114,9 @@
                             }
                         }
                     }
+                    .bolt{
+                        width: 250px;
+                    }
                 }
                 .prod-botons{
                     display: none;
@@ -229,6 +232,11 @@
                             &:hover{
                                 opacity: 1;
                                 transform: scale(1.1);
+                            }
+                        }
+                        .masLeft{
+                            &::before{
+                                left: -10%;
                             }
                         }
                         .producto-text{
@@ -373,9 +381,15 @@
                                 left: 0;
                                 width: 100%;
                                 height: 50%;
-                                background: linear-gradient(to top, #fff, transparent);
+                                background: linear-gradient(to top, $white, transparent);
                             }  
                         }
+                    }
+                    .bolt{
+                        width: 180px;
+                    }
+                    .hifu{
+                        width: 300px;
                     }
                 }
                 .producto-block-gallery{
