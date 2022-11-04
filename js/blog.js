@@ -89,21 +89,6 @@ const blog = [
         avatarText:'Kurt Rubinstein',
         page:'../page/blog/blog_10.html'
     },
-    
-    
-
-    
-    
-
-     
-    
-
-
-
-
-
-
-
 ]
 
 const blogSections = document.getElementById('blog-sections')
@@ -133,8 +118,4 @@ const cargarBlog = (blog) => {
     blogSections.appendChild(div)
 }
 
-window.addEventListener('load', ()  => {
-    blog.forEach((producto) => {
-        cargarBlog(producto);
-      });
-})
+blog.forEach((producto) => {cargarBlog(producto);});
