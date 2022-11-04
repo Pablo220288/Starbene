@@ -28,11 +28,11 @@
             </div>
             <nav class="nav">
                 <div class="nav-container">
-                    <img class="icono-nav" src="../assets/logoCompleto.png" alt="Icono Starbene">
+                    <img class="icono-nav" src="../assets/iconoStarbene.png" alt="Icono Starbene">
                     <div class="menu">
-                        <a href="../index.html" class="active"><span></span>Home</a>
+                        <a href="../index.html"><span></span>Home</a>
                         <a href="../page/productos.html"><span></span>Productos</a>
-                        <a href="../page/blog.html"><span></span>Blog</a>
+                        <a href="../page/blog.html" class="active"><span></span>Blog</a>
                         <a href="../page/contacto.html"><span></span>Contacto</a>
                     </div>
                     <button class="hamburger">
@@ -54,6 +54,21 @@
             </nav>
         </header>
         <main>
+            <div class="main-blog-container">
+                <section class="blog-title">
+                    <div class="blog-title-img-conten">
+                        <div class="blog-title-img">
+                            <h3 class="blog-title" data-aos="fade-right" data-aos-delay="100">Blog</h3>
+                            <div class="logo-starbene-img" data-aos="fade-right" data-aos-delay="200">
+                                <img class="logo-starbene" src="../../assets/logoCompletoblack.png" alt="Logo Starbene">
+                            </div>
+                        </div> 
+                    </div>
+                    <p class="blog-title-text">Conoce e infórmate de las nuevas tecnologías, tratamientos y avances.</p>
+                </section>
+                <!-- contenedor Articulos Blog-->
+                <section class="blog-sections" id="blog-sections"></section>
+            </div>
 
             <!-- Start of HubSpot Embed Code -->
             <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20268070.js"></script>
@@ -69,9 +84,9 @@
                         </div>
                         <div class="footer-link-redes">
                             <div class="footer-links">
-                                <a href="../index.html" class="links-footer active" data-aos="fade-up"><span></span>Home</a>
+                                <a href="../index.html" class="links-footer" data-aos="fade-up"><span></span>Home</a>
                                 <a href="../page/productos.html" class="links-footer" data-aos="fade-up" data-aos-delay="200"><span></span>Productos</a>
-                                <a href="../page/blog.html" class="links-footer" data-aos="fade-up" data-aos-delay="300"><span></span>Blog</a>
+                                <a href="../page/blog.html" class="links-footer active" data-aos="fade-up" data-aos-delay="300"><span></span>Blog</a>
                                 <a href="../page/contacto.html" class="links-footer" data-aos="fade-up" data-aos-delay="400"><span></span>Contacto</a>
                             </div>
                             <div class="footer-redes">
@@ -160,5 +175,6 @@
         <!--JavaScript-->
         <script src="../js/loader.js"></script>
         <script src="../js/nav.js"></script>
+        <script src="../js/blog.js"></script>
     </body>
 </html>
