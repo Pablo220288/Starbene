@@ -2590,6 +2590,7 @@ h1, h2, h3, h4, h5, h6, p {
 .main-blog-container .blog-sections .blog-section .section-img-contain .section-img img {
   width: 100%;
   max-width: 600px;
+  border-radius: 6px;
 }
 .main-blog-container .blog-sections .blog-section .section-img-contain .section-contain {
   width: 100%;
@@ -2638,6 +2639,9 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 50%;
   background-size: cover;
   background-position: 50% 50%;
+}
+.main-blog-container .blog-sections .blog-section .contain-avatar-boton .avatar-contain .avatar-text {
+  font-weight: bold;
 }
 .main-blog-container .blog-sections .blog-section .contain-avatar-boton .contain-boton {
   width: 120px;
