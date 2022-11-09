@@ -1,53 +1,43 @@
 .main-productos-container{
     position: relative;
     width: 100%;
-    .fondo-productos{
-        position: relative;
+    .producto-title-img-conten{
         width: 100%;
-        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        video{
-            position: absolute;
-            min-width: 100%;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.9;
-            object-fit: cover;
-            z-index: -1;
-        }
-        .fondo-img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            filter: drop-shadow(0px 0px 10px $black);
-        }
-        .capa{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #00000039;
-            z-index: -1;
-        }
-        .slogan{
-            width: 100%;
-            padding: 0 20px;
-            position: absolute;
-            left: 50%;
-            bottom: 15%;
-            transform: translate(-50%, -20%);
-            color: $white;
-            font-size: 1.5rem;
-            font-weight: 500;
-            text-align: center;
-            text-shadow: 0px 0px 10px $black;
+        margin: 100px 0px 40px 0px;
+        .producto-title-img{
+            width: 250px;
+            max-width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .producto-title{
+                align-self: flex-start;
+                font-size: 3rem;
+                font-weight: 600;
+            }
+            .logo-starbene-img{
+                align-self: flex-end;
+                width: 100px;
+                position: relative;
+                &:before{
+                    content: 'by';
+                    position: absolute;
+                    top: 0;
+                    left: -15px;
+                    color: $black;
+                    font-style: italic;
+                    opacity: 0.7;
+                    font-size: 0.6rem;
+                }
+                .logo-starbene{
+                    width: 100%;
+                }
+            }
         }
     }
     .container-productos{
@@ -102,31 +92,34 @@
             .producto-title-container{
                 align-self: flex-start;
                 margin-left: 35px;
-                .producto-title{
-                    color: $azulOscuro;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    margin-bottom: 10px;
-                    position: relative;
-                    transition: 0.5s linear;
-                    opacity: 0.9;
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        left: -7%;
-                        transform: translateY(-50%);
-                        width: 2px;
-                        height: 100%;
-                        background-color: $azulSecundario;
-                        transition: 1s;
-                    }
-                    &:hover::before{
-                        left: 107%;
-                    }
-                    &:hover{
-                        opacity: 1;
-                        transform: scale(1.1);
+                a{
+                    text-decoration: none;
+                    .producto-title{
+                        color: $azulOscuro;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        position: relative;
+                        transition: 0.5s linear;
+                        opacity: 0.9;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: -7%;
+                            transform: translateY(-50%);
+                            width: 2px;
+                            height: 100%;
+                            background-color: $azulSecundario;
+                            transition: 1s;
+                        }
+                        &:hover::before{
+                            left: 107%;
+                        }
+                        &:hover{
+                            opacity: 1;
+                            transform: scale(1.1);
+                        }
                     }
                 }
             }
@@ -293,31 +286,34 @@
             .producto-title-container{
                 align-self: flex-end;
                 margin-right: 35px;
-                .producto-title{
-                    color: $white;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    margin-bottom: 10px;
-                    position: relative;
-                    transition: 0.5s linear;
-                    opacity: 0.9;
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        right: -7%;
-                        transform: translateY(-50%);
-                        width: 2px;
-                        height: 100%;
-                        background-color: $verde;
-                        transition: 1s;
-                    }
-                    &:hover::before{
-                        right: 107%;
-                    }
-                    &:hover{
-                        opacity: 1;
-                        transform: scale(1.1);
+                a{
+                    text-decoration: none;
+                    .producto-title{
+                        color: $white;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        position: relative;
+                        transition: 0.5s linear;
+                        opacity: 0.9;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            right: -7%;
+                            transform: translateY(-50%);
+                            width: 2px;
+                            height: 100%;
+                            background-color: $verde;
+                            transition: 1s;
+                        }
+                        &:hover::before{
+                            right: 107%;
+                        }
+                        &:hover{
+                            opacity: 1;
+                            transform: scale(1.1);
+                        }
                     }
                 }
             }
@@ -443,14 +439,9 @@
 }
 @media(min-width:600px){
     .main-productos-container{
-        .fondo-productos{
-            .fondo-img{
-                width: 400px;
-            }
-            .slogan{
-                font-size: 2rem;
-                bottom: 5%;
-            }
+        .producto-title-img-conten{
+            justify-content: flex-start;
+            margin-left: 30px;
         }
         .container-productos{
             .producto-container-izq{

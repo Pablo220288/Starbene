@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: rgba(0, 0, 0, 0.454);
+  background-color: rgba(35, 90, 255, 0.8823529412);
   transition: 0.5s;
 }
 .nav .nav-container {
@@ -121,7 +121,6 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
   margin: 0 10px;
   position: relative;
-  text-shadow: 0px 0px 10px #000000;
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -136,7 +135,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav .nav-container .menu a span {
   position: absolute;
-  background: #2359FF;
+  background: #18143B;
   width: 0;
   height: 2px;
   bottom: -3px;
@@ -276,7 +275,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav-mobile .nav-mobile-container a:hover .nav-mobile-text {
   font-weight: 600;
-  color: #000000;
 }
 .nav-mobile .is-active {
   top: 0;
@@ -298,8 +296,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav-scroll {
   top: 0;
-  background-color: #000000;
-  box-shadow: 0px 2px 5px #4B39EF;
+  background-color: #2359FF;
+  box-shadow: 0px 2px 5px #000000;
 }
 
 .main-container {
@@ -315,14 +313,13 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   overflow: hidden;
 }
-.main-container .fondo-index video {
-  position: absolute;
-  min-width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.main-container .fondo-index .fondo {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/homeIndex.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
   opacity: 0.9;
-  object-fit: cover;
   z-index: -1;
 }
 .main-container .fondo-index .fondo-img {
@@ -331,7 +328,6 @@ h1, h2, h3, h4, h5, h6, p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  filter: drop-shadow(0px 0px 10px #000000);
   -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation-delay: 2s;
@@ -342,7 +338,7 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2235294118);
+  background-color: rgba(0, 0, 0, 0.3137254902);
   z-index: -1;
 }
 .main-container .fondo-index .slogan {
@@ -356,7 +352,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 1.8rem;
   font-weight: 500;
   text-align: center;
-  text-shadow: 0px 0px 10px #000000;
+  text-shadow: 0px 0px 10px 5px #000000;
   -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation-delay: 3s;
@@ -426,7 +422,11 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   gap: 20px;
 }
-.main-container .productos-index-container .productos-index .carousel .productos .producto-description .producto-title-description {
+.main-container .productos-index-container .productos-index .carousel .productos .producto-description a {
+  text-decoration: none;
+}
+.main-container .productos-index-container .productos-index .carousel .productos .producto-description a .producto-title-description {
+  color: #000000;
   font-weight: 700;
   -webkit-animation: slide-in-bottom 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bottom 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -452,19 +452,23 @@ h1, h2, h3, h4, h5, h6, p {
   animation-delay: 0.6s;
 }
 .main-container .productos-index-container .productos-index .carousel .productos .producto-description .productos-botons .productos-boton {
-  width: 120px;
+  width: 190px;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
   background-color: #4B39EF;
   border-radius: 6px;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   box-shadow: 0px 0px 5px #000000;
   transition: transform 300ms ease;
 }
 .main-container .productos-index-container .productos-index .carousel .productos .producto-description .productos-botons .productos-boton:hover {
   transform: scale(0.97);
+}
+.main-container .productos-index-container .productos-index .carousel .productos .producto-description .productos-botons .productos-boton:nth-child(2) {
+  background-color: #00FE82;
+  color: #000000;
 }
 .main-container .productos-index-container .productos-index .carousel .productos .producto-beneficios {
   display: none;
@@ -914,7 +918,7 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 1;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 820px) {
   .main-container .fondo-index .fondo-img {
     width: 480px;
   }
@@ -1025,54 +1029,44 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   width: 100%;
 }
-.main-productos-container .fondo-productos {
-  position: relative;
+.main-productos-container .producto-title-img-conten {
   width: 100%;
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  margin: 100px 0px 40px 0px;
 }
-.main-productos-container .fondo-productos video {
-  position: absolute;
-  min-width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.9;
-  object-fit: cover;
-  z-index: -1;
+.main-productos-container .producto-title-img-conten .producto-title-img {
+  width: 250px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.main-productos-container .fondo-productos .fondo-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  filter: drop-shadow(0px 0px 10px #000000);
+.main-productos-container .producto-title-img-conten .producto-title-img .producto-title {
+  align-self: flex-start;
+  font-size: 3rem;
+  font-weight: 600;
 }
-.main-productos-container .fondo-productos .capa {
+.main-productos-container .producto-title-img-conten .producto-title-img .logo-starbene-img {
+  align-self: flex-end;
+  width: 100px;
+  position: relative;
+}
+.main-productos-container .producto-title-img-conten .producto-title-img .logo-starbene-img:before {
+  content: "by";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2235294118);
-  z-index: -1;
+  left: -15px;
+  color: #000000;
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 0.6rem;
 }
-.main-productos-container .fondo-productos .slogan {
+.main-productos-container .producto-title-img-conten .producto-title-img .logo-starbene-img .logo-starbene {
   width: 100%;
-  padding: 0 20px;
-  position: absolute;
-  left: 50%;
-  bottom: 15%;
-  transform: translate(-50%, -20%);
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  text-shadow: 0px 0px 10px #000000;
 }
 .main-productos-container .container-productos {
   width: 100%;
@@ -1109,7 +1103,10 @@ h1, h2, h3, h4, h5, h6, p {
   align-self: flex-start;
   margin-left: 35px;
 }
-.main-productos-container .container-productos .producto-container-izq .producto-title-container .producto-title {
+.main-productos-container .container-productos .producto-container-izq .producto-title-container a {
+  text-decoration: none;
+}
+.main-productos-container .container-productos .producto-container-izq .producto-title-container a .producto-title {
   color: #18143B;
   font-size: 1.5rem;
   font-weight: 600;
@@ -1118,7 +1115,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.5s linear;
   opacity: 0.9;
 }
-.main-productos-container .container-productos .producto-container-izq .producto-title-container .producto-title::before {
+.main-productos-container .container-productos .producto-container-izq .producto-title-container a .producto-title::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1129,10 +1126,10 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #4B39EF;
   transition: 1s;
 }
-.main-productos-container .container-productos .producto-container-izq .producto-title-container .producto-title:hover::before {
+.main-productos-container .container-productos .producto-container-izq .producto-title-container a .producto-title:hover::before {
   left: 107%;
 }
-.main-productos-container .container-productos .producto-container-izq .producto-title-container .producto-title:hover {
+.main-productos-container .container-productos .producto-container-izq .producto-title-container a .producto-title:hover {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -1288,7 +1285,10 @@ h1, h2, h3, h4, h5, h6, p {
   align-self: flex-end;
   margin-right: 35px;
 }
-.main-productos-container .container-productos .producto-container-drc .producto-title-container .producto-title {
+.main-productos-container .container-productos .producto-container-drc .producto-title-container a {
+  text-decoration: none;
+}
+.main-productos-container .container-productos .producto-container-drc .producto-title-container a .producto-title {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 600;
@@ -1297,7 +1297,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.5s linear;
   opacity: 0.9;
 }
-.main-productos-container .container-productos .producto-container-drc .producto-title-container .producto-title::before {
+.main-productos-container .container-productos .producto-container-drc .producto-title-container a .producto-title::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1308,10 +1308,10 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #00FE82;
   transition: 1s;
 }
-.main-productos-container .container-productos .producto-container-drc .producto-title-container .producto-title:hover::before {
+.main-productos-container .container-productos .producto-container-drc .producto-title-container a .producto-title:hover::before {
   right: 107%;
 }
-.main-productos-container .container-productos .producto-container-drc .producto-title-container .producto-title:hover {
+.main-productos-container .container-productos .producto-container-drc .producto-title-container a .producto-title:hover {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -1432,12 +1432,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media (min-width: 600px) {
-  .main-productos-container .fondo-productos .fondo-img {
-    width: 400px;
-  }
-  .main-productos-container .fondo-productos .slogan {
-    font-size: 2rem;
-    bottom: 5%;
+  .main-productos-container .producto-title-img-conten {
+    justify-content: flex-start;
+    margin-left: 30px;
   }
   .main-productos-container .container-productos .producto-container-izq .producto {
     width: 90%;
@@ -1504,61 +1501,6 @@ h1, h2, h3, h4, h5, h6, p {
 .main-prod-container {
   position: relative;
   width: 100%;
-}
-.main-prod-container .fondo-mioup {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.main-prod-container .fondo-mioup .fondo-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-size: cover;
-}
-.main-prod-container .fondo-mioup .capa {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4274509804);
-}
-.main-prod-container .fondo-mioup .productos-title-container {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  width: 100%;
-}
-.main-prod-container .fondo-mioup .productos-title-container .productos-title {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 10px;
-  position: relative;
-  transition: 0.5s linear;
-  text-shadow: 0px 0px 10px #000000;
-}
-.main-prod-container .fondo-mioup .slogan {
-  width: 100%;
-  padding: 0 20px;
-  position: absolute;
-  left: 50%;
-  bottom: 15%;
-  transform: translate(-50%, -20%);
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  text-shadow: 0px 0px 10px #000000;
 }
 .main-prod-container .productos-container {
   width: 100%;
@@ -1638,18 +1580,18 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 20px;
 }
 .main-prod-container .productos-container .productos .prod-title-botons .prod-botons .productos-botons .prod-boton {
-  width: 120px;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main-prod-container .productos-container .productos .prod-title-botons .prod-botons .productos-botons .prod-boton .productos-boton {
   width: 100%;
+  background-color: #00FE82;
+  color: #000000;
   justify-self: end;
-  color: #ffffff;
   text-decoration: none;
   text-align: center;
-  background-color: #4B39EF;
   border-radius: 6px;
   padding: 10px;
   font-size: 1.1rem;
@@ -1658,10 +1600,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main-prod-container .productos-container .productos .prod-title-botons .prod-botons .productos-botons .prod-boton .productos-boton:hover {
   transform: scale(0.97);
-}
-.main-prod-container .productos-container .productos .prod-title-botons .prod-botons .productos-botons .prod-boton .cotizar {
-  background-color: #00FE82;
-  color: #000000;
 }
 .main-prod-container .productos-container .productos .prod-title-botons .prod-botons .producto-dowloand {
   width: 100%;
@@ -1786,7 +1724,7 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 20px;
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-block .producto-description .productos-botons .prod-boton {
-  width: 120px;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1794,10 +1732,10 @@ h1, h2, h3, h4, h5, h6, p {
 .main-prod-container .productos-container .productos .producto-conten .producto-block .producto-description .productos-botons .prod-boton .productos-boton {
   width: 100%;
   justify-self: end;
-  color: #ffffff;
   text-decoration: none;
   text-align: center;
-  background-color: #4B39EF;
+  background-color: #00FE82;
+  color: #000000;
   border-radius: 6px;
   padding: 10px;
   font-size: 1.1rem;
@@ -1806,10 +1744,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-block .producto-description .productos-botons .prod-boton .productos-boton:hover {
   transform: scale(0.97);
-}
-.main-prod-container .productos-container .productos .producto-conten .producto-block .producto-description .productos-botons .prod-boton .cotizar {
-  background-color: #00FE82;
-  color: #000000;
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-block .alpha {
   gap: 20px;
@@ -2225,7 +2159,7 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 20px;
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-contacto .productos-botons .prod-boton {
-  width: 120px;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2233,10 +2167,10 @@ h1, h2, h3, h4, h5, h6, p {
 .main-prod-container .productos-container .productos .producto-conten .producto-contacto .productos-botons .prod-boton .productos-boton {
   width: 100%;
   justify-self: end;
-  color: #ffffff;
   text-decoration: none;
   text-align: center;
-  background-color: #4B39EF;
+  background-color: #00FE82;
+  color: #000000;
   border-radius: 6px;
   padding: 10px;
   font-size: 1.1rem;
@@ -2245,10 +2179,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-contacto .productos-botons .prod-boton .productos-boton:hover {
   transform: scale(0.97);
-}
-.main-prod-container .productos-container .productos .producto-conten .producto-contacto .productos-botons .prod-boton .cotizar {
-  background-color: #00FE82;
-  color: #000000;
 }
 .main-prod-container .productos-container .productos .producto-conten .producto-interes {
   width: 100%;
@@ -2716,14 +2646,23 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 30px;
   margin: 100px auto;
 }
-.contacto .contacto-title {
+.contacto .contacto-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contacto .contacto-title-text .contacto-title {
   text-align: center;
   font-weight: 700;
+  font-size: 2rem;
   position: relative;
   transition: 0.5s linear;
   opacity: 0.9;
+  margin-bottom: 20px;
 }
-.contacto .contacto-title::before {
+.contacto .contacto-title-text .contacto-title::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2733,6 +2672,9 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   background-color: #4B39EF;
   transition: 1s;
+}
+.contacto .contacto-title-text .contacto-text {
+  text-align: center;
 }
 .contacto .conten_contacto {
   padding: 20px;
@@ -2925,14 +2867,14 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: row;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .footer .footer-container .footer-slogan-link-redes {
     padding: 30px 0px;
     flex-direction: row;
     justify-content: center;
     gap: 0;
   }
-  .footer .footer-container .footer-slogan-link-redes .footer-slogan {
+  .footer .footer-container .footer-slogan-link-redes .footer-logo-slogan {
     width: 100%;
     flex: 1;
   }
@@ -2941,10 +2883,10 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
   }
   .footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-links {
-    flex: 1;
+    flex: 0.9;
   }
   .footer .footer-container .footer-slogan-link-redes .footer-link-redes .footer-redes {
-    flex: 1;
+    flex: 1.1;
   }
 }
 

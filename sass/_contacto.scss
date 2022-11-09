@@ -6,22 +6,34 @@
     align-items: center;
     gap: 30px;
     margin: 100px auto;
-    .contacto-title{
-        text-align: center;
-        font-weight: 700;
-        position: relative;
-        transition: 0.5s linear;
-        opacity: 0.9;
-        &::before{
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: -5%;
-            transform: translateY(-50%);
-            width: 4px;
-            height: 100%;
-            background-color: $azulSecundario;
-            transition: 1s;
+    .contacto-title-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .contacto-title{
+            text-align: center;
+            font-weight: 700;
+            font-size: 2rem;
+            position: relative;
+            transition: 0.5s linear;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -5%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 100%;
+                background-color: $azulSecundario;
+                transition: 1s;
+            }
+        }
+        .contacto-text{
+            text-align: center;
         }
     }
     .conten_contacto{
