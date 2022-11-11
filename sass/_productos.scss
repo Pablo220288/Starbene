@@ -201,6 +201,10 @@
                             &:hover{
                                 transform: scale(0.97);
                             }
+                            &:nth-child(2){
+                                background-color: $verde;
+                                color: $black;
+                            }
                         }
                     }
                 }
@@ -395,6 +399,10 @@
                             transition: transform 300ms ease;
                             &:hover{
                                 transform: scale(0.97);
+                            }
+                            &:nth-child(2){
+                                background-color: $verde;
+                                color: $black;
                             }
                         }
                     }
