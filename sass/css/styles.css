@@ -315,47 +315,32 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main-container .fondo-index .fondo {
   width: 100%;
-  height: 100%;
-  background-image: url("../../assets/homeIndex.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  opacity: 0.9;
+  height: 150%;
+  background: linear-gradient(to top, #2359FF, #4B39EF, #00FE82);
   z-index: -1;
 }
-.main-container .fondo-index .fondo-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation-delay: 2s;
-}
-.main-container .fondo-index .capa {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3137254902);
-  z-index: -1;
-}
-.main-container .fondo-index .slogan {
+.main-container .fondo-index .slogan-conten {
   width: 100%;
   padding: 0 20px;
   position: absolute;
   left: 50%;
-  bottom: 10%;
-  transform: translate(-50%, -20%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .fondo-index .slogan-conten .slogan {
   color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 700;
   text-align: center;
-  text-shadow: 0px 0px 10px 5px #000000;
-  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation-delay: 3s;
+  text-shadow: 0px 0px 10px 1px #000000;
+}
+.main-container .fondo-index .slogan-conten .fondo-img {
+  margin-top: 80px;
+  width: 120px;
 }
 .main-container .productos-index-container {
   width: 100%;
@@ -918,9 +903,20 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 1;
   }
 }
+@media (min-width: 480px) {
+  .main-container .fondo-index .slogan-conten .slogan {
+    font-size: 1.8rem;
+  }
+  .main-container .fondo-index .slogan-conten .fondo-img {
+    width: 150px;
+  }
+}
 @media (min-width: 820px) {
-  .main-container .fondo-index .fondo-img {
-    width: 480px;
+  .main-container .fondo-index .slogan-conten .slogan {
+    font-size: 2rem;
+  }
+  .main-container .fondo-index .slogan-conten .fondo-img {
+    width: 180px;
   }
   .main-container .frabicantes-index .fabricantes-title-container {
     align-self: flex-start;
@@ -971,8 +967,11 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 @media (min-width: 1000px) {
-  .main-container .fondo-index .fondo-img {
-    width: 60%;
+  .main-container .fondo-index .slogan-conten .slogan {
+    font-size: 2.2rem;
+  }
+  .main-container .fondo-index .slogan-conten .fondo-img {
+    width: 200px;
   }
   .main-container .productos-index-container .productos-title-container .productos-title {
     font-size: 2rem;
