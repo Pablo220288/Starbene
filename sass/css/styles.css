@@ -793,6 +793,7 @@ h1, h2, h3, h4, h5, h6, p {
 .main-container .capacitacion-index .capacitacion-container .boton-capacitacion {
   color: #ffffff;
   background-color: #2359FF;
+  text-decoration: none;
   border: none;
   border-radius: 6px;
   padding: 10px 30px;
@@ -881,6 +882,7 @@ h1, h2, h3, h4, h5, h6, p {
 .main-container .visitanos-index .visitanos-direccion-mapa .boton-visitanos {
   color: #ffffff;
   background-color: #2359FF;
+  text-decoration: none;
   border: none;
   border-radius: 6px;
   padding: 10px 30px;
